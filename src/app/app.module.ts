@@ -1,14 +1,22 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { CockpitComponent } from './ComponentsAndDatabinding/cockpit/cockpit.component';
+import { ServerElementComponent } from './ComponentsAndDatabinding/server-element/server-element.component';
+import { ManagerComponentsAndDatabindingComponent } from './ComponentsAndDatabinding/manager-components-and-databinding/manager-components-and-databinding.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CockpitComponent,
+    ServerElementComponent,
+    ManagerComponentsAndDatabindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
